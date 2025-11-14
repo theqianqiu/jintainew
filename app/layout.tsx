@@ -7,16 +7,13 @@ import { LanguageProvider } from "@/contexts/language-context"
 export const metadata = {
   title: "GINTAIK - Advanced TPU Laminated Fabric Solutions",
   description: "Eco-friendly, high-quality TPU laminated fabric for various applications",
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="stylesheet" href="//at.alicdn.com/t/webfont_eov1gufvsfn.css" />
-      </head>
-      <body className="font-alibaba">
+    <html lang="en" suppressHydrationWarning>
+      <body className="font-sans">
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <LanguageProvider>
             <RouteChangeAnimation />

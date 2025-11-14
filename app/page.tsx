@@ -97,8 +97,8 @@ export default function Home() {
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
                 whileHover={{ y: -5, transition: { duration: 0.3 } }}
               >
-                <div className="relative h-48 rounded-lg overflow-hidden mb-4">
-                  <Image src="/images/aviation.png" alt={t("aviationMarineTitle")} fill className="object-cover" />
+                <div className="relative h-48 w-full rounded-lg overflow-hidden mb-4">
+                  <Image src="/images/aviation.png" alt={t("aviationMarineTitle")} fill className="object-cover" priority />
                 </div>
                 <h3 className="text-xl font-semibold text-[#2a4399] mb-2">{t("aviationMarineTitle")}</h3>
                 <p className="text-slate-600 mb-4 line-clamp-3">{t("aviationMarineDesc").substring(0, 120)}...</p>
@@ -113,7 +113,7 @@ export default function Home() {
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
                 whileHover={{ y: -5, transition: { duration: 0.3 } }}
               >
-                <div className="relative h-48 rounded-lg overflow-hidden mb-4">
+                <div className="relative h-48 w-full rounded-lg overflow-hidden mb-4">
                   <Image src="/images/sports.png" alt={t("sportsOutdoorTitle")} fill className="object-cover" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#2a4399] mb-2">{t("sportsOutdoorTitle")}</h3>
@@ -129,7 +129,7 @@ export default function Home() {
                 className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow"
                 whileHover={{ y: -5, transition: { duration: 0.3 } }}
               >
-                <div className="relative h-48 rounded-lg overflow-hidden mb-4">
+                <div className="relative h-48 w-full rounded-lg overflow-hidden mb-4">
                   <Image src="/images/medical.png" alt={t("medicalTitle")} fill className="object-cover" />
                 </div>
                 <h3 className="text-xl font-semibold text-[#2a4399] mb-2">{t("medicalTitle")}</h3>
